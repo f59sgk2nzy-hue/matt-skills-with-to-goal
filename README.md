@@ -163,7 +163,7 @@ Goal
 
 ## 技能地图
 
-当前发行版包含 **31 个 promoted Skills**：25 个随上游同步的工程与生产力 Skill，以及本 fork 新增的 `to-goal`、`goal-crafter`、`spec-executor`、`execute-spec-in-fork`、`roundtable`、`life-os`。
+当前发行版包含 **32 个 promoted Skills**：25 个随上游同步的工程与生产力 Skill，以及本 fork 新增的 `to-goal`、`goal-crafter`、`spec-executor`、`execute-spec-in-fork`、`roundtable`、`life-os`、`life-os-dreaming`。
 
 ### 规划与交接
 
@@ -204,6 +204,7 @@ Goal
 | [`improve-codebase-architecture`](./skills/engineering/improve-codebase-architecture/SKILL.md) | 识别并推进架构深化机会 |
 | [`resolving-merge-conflicts`](./skills/engineering/resolving-merge-conflicts/SKILL.md) | 处理合并冲突并保护双方意图 |
 | [`life-os`](./skills/productivity/life-os/SKILL.md) | 在 Notion 中运行分为工作 / 个人两区的日常 OS；任务、文件与任务和对话的结果仅经你许可后保存 |
+| [`life-os-dreaming`](./skills/productivity/life-os-dreaming/SKILL.md) | 复盘 Notion 中的 Life OS，最多给出四条有证据的改进建议；未经你同意不会改动任何内容 |
 | [`teach`](./skills/productivity/teach/SKILL.md) | 多会话教学，目录作为有状态学习空间 |
 | [`wizard`](./skills/engineering/wizard/SKILL.md) | 生成交互式 bash 向导，处理只有人能完成的步骤（开通基础设施、配置凭证 / CI secret） |
 | [`wait-what`](./skills/productivity/wait-what/SKILL.md) | 对话中途没听懂时，让 agent 用 `CONTEXT.md` 词汇重新讲一遍 |
@@ -238,7 +239,7 @@ Goal
 - **产出可选性**：`improve-codebase-architecture` 默认以 markdown 呈现候选，HTML 报告改为按需产出（离线与受限环境下不再残废）
 - **绝对化表述加边界**：`to-spec` 的 seam 数量与 `resolving-merge-conflicts` 的 `--abort` 改为「默认…除非…」句式，保留引导力但不在边缘场景误导
 - **独立发行**：package、Claude plugin、marketplace、changeset 和仓库链接使用本 fork 的名称、版本与远端
-- **本地分发**：`npm run sync:local` 先备份并同步 31 个 promoted Skills 到统一的 `~/.agents_skills/`，再刷新 Hermes 副本
+- **本地分发**：`npm run sync:local` 先备份并同步 32 个 promoted Skills 到统一的 `~/.agents_skills/`，再刷新 Hermes 副本
 - **上游维护**：`npm run sync:upstream` 在干净工作树上创建备份分支，并把 fork overlay rebase 到最新 `upstream/main`；脚本不会自动 push
 - **目录结构**：跟随上游 `skills/{engineering,productivity,misc,in-progress,deprecated}/` 分类
 - **继承边界**：未被本 fork 修改的 Skill 和文档继续继承上游；发行元数据、维护脚本和本 fork 工作流由本仓库独立维护

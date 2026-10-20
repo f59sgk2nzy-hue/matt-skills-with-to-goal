@@ -1,0 +1,5 @@
+interface:
+  display_name: "Life OS Dreaming"
+  short_description: "Review your Life OS and propose up to four improvements"
+policy:
+  allow_implicit_invocation: false
